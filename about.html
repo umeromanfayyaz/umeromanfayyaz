@@ -14,84 +14,46 @@
       color: #f5f5f5;
       line-height: 1.7;
     }
-body.light-mode {
-  background: #f5f5f5;
-  color: #111827;
-}
 
-body.light-mode nav {
-  background: #ffffff;
-  border-bottom: 1px solid #d1d5db;
-}
+    body.light-mode {
+      background: #f5f5f5;
+      color: #111827;
+    }
 
-body.light-mode nav a {
-  color: #111827;
-}
+    body.light-mode nav {
+      background: #ffffff;
+      border-bottom: 1px solid #d1d5db;
+    }
 
-body.light-mode nav a:hover {
-  color: #2563eb;
-}
+    body.light-mode nav a {
+      color: #111827;
+    }
 
-body.light-mode header {
-  background:
-    radial-gradient(circle at top, rgba(37, 99, 235, 0.12), transparent 35%),
-    linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
-}
+    body.light-mode nav a:hover {
+      color: #2563eb;
+    }
 
-body.light-mode section {
-  background: #ffffff;
-  border: 1px solid #d1d5db;
-}
+    body.light-mode section {
+      background: #ffffff;
+      border: 1px solid #d1d5db;
+    }
 
-body.light-mode h1,
-body.light-mode h2,
-body.light-mode h3 {
-  color: #111827;
-}
+    body.light-mode h1,
+    body.light-mode h2,
+    body.light-mode h3 {
+      color: #111827;
+    }
 
-body.light-mode p,
-body.light-mode li {
-  color: #374151;
-}
+    body.light-mode p,
+    body.light-mode li {
+      color: #374151;
+    }
 
-body.light-mode footer {
-  border-top: 1px solid #d1d5db;
-  color: #374151;
-}
+    body.light-mode footer {
+      border-top: 1px solid #d1d5db;
+      color: #374151;
+    }
 
-.theme-toggle {
-  position: fixed;
-  right: 18px;
-  bottom: 18px;
-  z-index: 2000;
-  padding: 10px 16px;
-  background: #111827;
-  color: #ffffff;
-  border: 1px solid #374151;
-  border-radius: 999px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-body.light-mode .theme-toggle {
-  background: #ffffff;
-  color: #111827;
-  border: 1px solid #9ca3af;
-}
-
-.profile-photo {
-  width: 190px;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #2563eb;
-  margin-bottom: 25px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
-}
-
-body.light-mode .profile-photo {
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
-}
     nav {
       background: #0f0f0f;
       border-bottom: 1px solid #1f2937;
@@ -112,7 +74,7 @@ body.light-mode .profile-photo {
     }
 
     section {
-      max-width: 1000px;
+      max-width: 1050px;
       margin: 60px auto;
       padding: 45px;
       background: #0f0f0f;
@@ -124,11 +86,78 @@ body.light-mode .profile-photo {
       font-size: 42px;
       color: #ffffff;
       margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      color: #ffffff;
+      font-size: 26px;
+      margin-top: 42px;
+      margin-bottom: 14px;
+      border-bottom: 1px solid #374151;
+      padding-bottom: 10px;
     }
 
     p {
       color: #d1d5db;
       font-size: 16px;
+      margin-bottom: 18px;
+    }
+
+    .opening-line {
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .quote {
+      margin-top: 40px;
+      padding: 24px;
+      border-left: 4px solid #2563eb;
+      background: #111827;
+      border-radius: 12px;
+      color: #ffffff;
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    body.light-mode .quote {
+      background: #f3f4f6;
+      color: #111827;
+    }
+
+    .profile-photo {
+      width: 190px;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #2563eb;
+      margin-bottom: 25px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+    }
+
+    body.light-mode .profile-photo {
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+    }
+
+    .theme-toggle {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 2000;
+      padding: 10px 16px;
+      background: #111827;
+      color: #ffffff;
+      border: 1px solid #374151;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    body.light-mode .theme-toggle {
+      background: #ffffff;
+      color: #111827;
+      border: 1px solid #9ca3af;
     }
 
     footer {
@@ -136,6 +165,11 @@ body.light-mode .profile-photo {
       padding: 35px 20px;
       color: #9ca3af;
       border-top: 1px solid #1f2937;
+    }
+
+    footer p {
+      color: #9ca3af;
+      font-size: 14px;
     }
 
     @media (max-width: 800px) {
@@ -147,6 +181,18 @@ body.light-mode .profile-photo {
       nav a {
         display: inline-block;
         margin: 6px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      h2 {
+        font-size: 23px;
+      }
+
+      .opening-line {
+        font-size: 18px;
       }
     }
   </style>
@@ -167,77 +213,220 @@ body.light-mode .profile-photo {
   </nav>
 
   <section>
+    <!-- If you upload your photo as profile.jpg, this will show your picture. -->
+    <img src="profile.jpg" alt="Um-E-Roman Fayyaz" class="profile-photo">
+
     <h1>About Me</h1>
 
-    <p>
-      I am an academic specializing in corporate governance, board diversity,
-      ESG Environmental, Social and Governance disclosure, and the governance
-      of innovation and entrepreneurship.
+    <p class="opening-line">
+      Some careers follow a straight line. Mine followed a question.
     </p>
 
     <p>
-      My work examines how leadership composition and diversity, including gender
-      diversity and female participation, shape firm performance, sustainability
-      practices, and entrepreneurial outcomes across established firms and
-      innovative start-ups.
+      That question — does it matter who sits in the boardroom? — took me from the foothills
+      of Azad Kashmir to the lecture halls of Italy, through the spreadsheets of Pakistani banks,
+      across research institutions in three countries, and into the heart of one of the most urgent
+      debates in modern business: how diversity, governance, and sustainability intersect to shape
+      the organisations that shape our world.
+    </p>
+
+    <h2>Where It Started</h2>
+
+    <p>
+      I grew up in Azad Jammu & Kashmir, Pakistan — a place where ambition has to travel far to
+      find its footing. I was the kind of student who took academics seriously, finishing my Bachelor
+      of Business Administration at the University of Azad Jammu & Kashmir with the Gold Medal for
+      the highest CGPA in my entire graduating cohort. Not bad for someone who had no roadmap,
+      only curiosity.
     </p>
 
     <p>
-      I hold a Ph.D. in Accounting, Management and Business Economics
-      EQF Level 8 from Università degli Studi “G. d’Annunzio” Chieti-Pescara,
-      Italy, and have pursued visiting research periods at the University of
-      Murcia, Spain, and PMAS Arid Agriculture University, Pakistan.
+      My Master's followed at Riphah International University in Islamabad — on a full Talent
+      Scholarship — where I graduated with Distinction and wrote my first serious research on
+      corporate governance and dividend policy. That thesis planted a seed: governance was not just
+      a technical subject. It was about power, accountability, and who gets to make decisions that
+      affect everyone else.
+    </p>
+
+    <h2>The Real World, Briefly</h2>
+
+    <p>
+      Before academia claimed me fully, I stepped into industry. I worked as a Trainee Officer at
+      Askari Bank — a public armed forces-managed institution — designing investment strategies for
+      corporate and individual clients. I then moved to Jubilee Life Insurance, where I managed
+      relationships, hit sales targets, and mentored junior colleagues. I also spent time as a researcher
+      at the Senate Standing Committee of Railways, preparing analysis reports to support parliamentary
+      discussions.
     </p>
 
     <p>
-      My post-PhD academic career spans two research positions: a Post-Doctoral
-      Research Fellowship at Università degli Studi “G. d’Annunzio” Chieti-Pescara,
-      and a Research Fellowship at the Department of Management, Alma Mater
-      Studiorum Università di Bologna.
+      These were not detours. They were lenses. Sitting inside institutions taught me things no textbook
+      could: how organisations actually function, how decisions get made, and how rarely the people at
+      the top reflect the people they serve.
+    </p>
+
+    <h2>The PhD — and the Question That Would Not Let Go</h2>
+
+    <p>
+      In February 2019, I moved to Italy and began my PhD at Università degli Studi “G. d’Annunzio”
+      Chieti-Pescara — on a competitive open merit scholarship. My doctoral research examined
+      <em>The Role of Corporate Board Attributes and Corporate Social Responsibility on Firm Decisions</em>.
+      A mouthful, yes, but at its core it asked something simple: does the composition of a board change
+      what a company does?
     </p>
 
     <p>
-      At the University of Bologna, I worked on an EU NextGenerationEU/PNRR-funded
-      project examining board composition, governance structures, and the role of
-      female founders and directors in Italian innovative start-ups.
+      The answer, as my research showed repeatedly, is yes.
     </p>
 
     <p>
-      I have also served as a Teaching Tutor in Applied Business Strategy at the
-      University of Bologna and as a Teaching Assistant at Università degli Studi
-      “G. d’Annunzio” Chieti-Pescara.
+      During my PhD, I spent six months as a Visiting Research Scholar at the University of Murcia
+      in Spain, under Professor Antonio Mínguez Vera — one of Europe's leading voices on gender diversity
+      in governance — and an additional period at PMAS Arid Agriculture University in Pakistan. These visits
+      were not just academic formalities; they were the moments my research became genuinely international,
+      tested against different institutional contexts, and challenged by different minds.
+    </p>
+
+    <p>
+      I defended in February 2023. Four years of work distilled into one conclusion: diversity in leadership
+      is not a soft value. It is a measurable driver of performance, sustainability, and accountability.
+    </p>
+
+    <h2>Post-Doctoral Work — From Theory to Evidence</h2>
+
+    <p>
+      My first post-doctoral position came immediately after my PhD, back at Università d'Annunzio.
+      I dove into one of the most pressing governance topics of the moment: greenwashing. Specifically,
+      I examined how board diversity and ESG reporting practices relate to greenwashing behaviour across
+      listed firms — building and analysing large-scale compliance datasets from scratch.
+    </p>
+
+    <p>
+      In an era where “sustainable” has become a marketing word as much as a meaningful commitment,
+      this work mattered.
+    </p>
+
+    <h2>Bologna — Where It All Came Together</h2>
+
+    <p>
+      In March 2024, I joined the Department of Management at Alma Mater Studiorum Università di Bologna —
+      one of the oldest and most prestigious universities in the world — as a Research Fellow on a project
+      funded by the EU NextGenerationEU/PNRR programme. The project focused on something I cared about deeply:
+      female entrepreneurship in Italian innovative start-ups.
+    </p>
+
+    <p>
+      I built a governance and diversity dataset from the ground up — identifying female board representation,
+      ownership structures, and leadership composition across thousands of Italian start-ups, and examining how
+      these factors shaped firm performance, strategy, and sustainability outcomes. It was forensic, painstaking
+      work, and it produced findings that speak directly to how Italy — and Europe — should think about inclusive
+      innovation.
+    </p>
+
+    <p>
+      Alongside my research, I taught. As a Teaching Tutor in Applied Business Strategy at Bologna's Forlì Campus,
+      and in International Management, I brought my research into the classroom — giving students not just frameworks
+      to understand governance and sustainability, but the evidence that makes those frameworks real.
+    </p>
+
+    <h2>The Research Record</h2>
+
+    <p>
+      To date, I have published 12 peer-reviewed articles in international journals, including
+      <em>Business Strategy and the Environment</em>, <em>Corporate Social Responsibility and Environmental Management</em>,
+      <em>International Journal of Business Governance and Ethics</em>, <em>Global Business and Economics Review</em>,
+      <em>SAGE Open</em>, and others.
+    </p>
+
+    <p>
+      My work spans board diversity and firm performance, ESG disclosure and greenwashing, female entrepreneurship,
+      CEO power and corporate risk, dividend policy, and cryptocurrency herding behaviour. I have been cited
+      internationally, presented at leading conferences including the Academy of Management and the European Academy
+      of Management, and reviewed manuscripts for journals including the <em>Human Resource Management Journal</em>
+      and <em>Corporate Social Responsibility and Environmental Management</em>. Since June 2025, I have served on
+      the Editorial Board of <em>SAGE Open</em>.
+    </p>
+
+    <p>
+      I am a funded scholar — my research career has been supported by EU PNRR funding, Italian national research
+      grants, international visiting fellowships, and scholarships from institutions in Italy, Spain, Pakistan, and
+      the United States.
+    </p>
+
+    <h2>What Drives Me</h2>
+
+    <p>
+      I study governance because governance determines outcomes — not just financial ones, but human ones. Who sits
+      on a board affects whether a company pollutes or protects, whether it exploits or empowers, whether it serves
+      shareholders alone or society at large.
+    </p>
+
+    <p>
+      I focus on diversity because the evidence is unambiguous: diverse leadership makes better decisions. And yet,
+      despite decades of research — including mine — too many boardrooms still look the same.
+    </p>
+
+    <p>
+      I work at the intersection of ESG and governance because that intersection is where the next generation of
+      business accountability will be decided. The EU's Corporate Sustainability Reporting Directive, the PNRR
+      investment in inclusive innovation, and the growing scrutiny of greenwashing are not trends. They are the new
+      operating environment for every firm that wants to exist in twenty years.
+    </p>
+
+    <p>
+      And I believe research has a role to play — not just in academic journals, but in the decisions that companies,
+      policymakers, and investors make every day.
+    </p>
+
+    <h2>Where I Am Now</h2>
+
+    <p>
+      I am based in Pescara, Italy, with long-term Italian residency. I am currently working on several projects —
+      examining legal systems and ESG controversies, leadership diversity and green innovation, and the role of AI
+      in individual investment behaviour — while exploring ways to bring my expertise to industry, policy, and practice.
+    </p>
+
+    <p>
+      If you are working on questions of ESG, governance, sustainability reporting, or board diversity — in research,
+      consulting, or business — I would love to connect.
+    </p>
+
+    <p class="quote">
+      “The question was always the same. Only the evidence kept growing.”
     </p>
   </section>
 
   <footer>
     <p>© 2026 Um-E-Roman Fayyaz. All rights reserved.</p>
   </footer>
-<button class="theme-toggle" onclick="toggleTheme()">Light Mode</button>
 
-<script>
-  function toggleTheme() {
-    document.body.classList.toggle("light-mode");
+  <button class="theme-toggle" onclick="toggleTheme()">Light Mode</button>
 
-    const button = document.querySelector(".theme-toggle");
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light-mode");
 
-    if (document.body.classList.contains("light-mode")) {
-      button.textContent = "Dark Mode";
-      localStorage.setItem("theme", "light");
-    } else {
-      button.textContent = "Light Mode";
-      localStorage.setItem("theme", "dark");
+      const button = document.querySelector(".theme-toggle");
+
+      if (document.body.classList.contains("light-mode")) {
+        button.textContent = "Dark Mode";
+        localStorage.setItem("theme", "light");
+      } else {
+        button.textContent = "Light Mode";
+        localStorage.setItem("theme", "dark");
+      }
     }
-  }
 
-  window.onload = function () {
-    const savedTheme = localStorage.getItem("theme");
-    const button = document.querySelector(".theme-toggle");
+    window.onload = function () {
+      const savedTheme = localStorage.getItem("theme");
+      const button = document.querySelector(".theme-toggle");
 
-    if (savedTheme === "light") {
-      document.body.classList.add("light-mode");
-      button.textContent = "Dark Mode";
-    }
-  };
-</script>
+      if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+        button.textContent = "Dark Mode";
+      }
+    };
+  </script>
+
 </body>
 </html>
