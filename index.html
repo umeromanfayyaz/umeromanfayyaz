@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Um-E-Roman Fayyaz</title>
 
   <style>
     * {
       box-sizing: border-box;
-      scroll-behavior: smooth;
     }
 
     body {
@@ -19,8 +19,31 @@
       line-height: 1.7;
     }
 
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(5, 5, 5, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #1f2937;
+      padding: 16px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #93c5fd;
+    }
+
     header {
-      min-height: 90vh;
+      min-height: 88vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -32,7 +55,7 @@
     }
 
     .hero {
-      max-width: 850px;
+      max-width: 900px;
     }
 
     .hero h1 {
@@ -42,38 +65,37 @@
       color: #ffffff;
     }
 
-    .hero p {
-      font-size: 20px;
-      color: #d1d5db;
-      margin: 10px 0;
-    }
-
-    .hero .subtitle {
+    .subtitle {
       color: #93c5fd;
+      font-size: 20px;
       font-weight: bold;
+      margin-bottom: 20px;
     }
 
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(5, 5, 5, 0.9);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid #1f2937;
-      padding: 16px;
-      text-align: center;
+    .intro {
+      color: #d1d5db;
+      font-size: 18px;
+      max-width: 780px;
+      margin: 0 auto 35px;
     }
 
-    nav a {
-      color: #f5f5f5;
-      margin: 0 14px;
+    .button-row a {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 20px;
+      background: #111827;
+      color: #ffffff;
       text-decoration: none;
-      font-size: 15px;
+      border: 1px solid #374151;
+      border-radius: 999px;
       font-weight: bold;
+      transition: 0.3s ease;
     }
 
-    nav a:hover {
-      color: #60a5fa;
+    .button-row a:hover {
+      background: #2563eb;
+      border-color: #2563eb;
+      transform: translateY(-2px);
     }
 
     section {
@@ -94,67 +116,20 @@
       padding-bottom: 14px;
     }
 
-    h3 {
-      color: #93c5fd;
-      margin-bottom: 8px;
-    }
-
     p {
       color: #d1d5db;
       font-size: 16px;
     }
 
-    .item {
-      margin-bottom: 28px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #1f2937;
-    }
-
-    .item:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .links {
-      margin-top: 20px;
-    }
-
-    .links a {
-      display: inline-block;
-      margin: 8px 10px 8px 0;
-      padding: 12px 18px;
-      background: #111827;
-      color: #ffffff;
+    .profile-links a {
+      color: #93c5fd;
+      margin-right: 15px;
       text-decoration: none;
-      border: 1px solid #374151;
-      border-radius: 999px;
       font-weight: bold;
-      transition: 0.3s ease;
     }
 
-    .links a:hover {
-      background: #2563eb;
-      border-color: #2563eb;
-      transform: translateY(-2px);
-    }
-
-    .contact-box {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .contact-card {
-      background: #111827;
-      border: 1px solid #374151;
-      padding: 22px;
-      border-radius: 14px;
-    }
-
-    .contact-card strong {
+    .profile-links a:hover {
       color: #ffffff;
-      display: block;
-      margin-bottom: 6px;
     }
 
     footer {
@@ -170,18 +145,22 @@
       font-size: 14px;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
+      nav a {
+        display: inline-block;
+        margin: 6px;
+      }
+
       .hero h1 {
         font-size: 40px;
       }
 
-      .hero p {
+      .subtitle {
         font-size: 17px;
       }
 
-      nav a {
-        display: inline-block;
-        margin: 6px 8px;
+      .intro {
+        font-size: 16px;
       }
 
       section {
@@ -189,8 +168,15 @@
         padding: 28px;
       }
 
-      .contact-box {
-        grid-template-columns: 1fr;
+      .button-row a {
+        display: block;
+        max-width: 280px;
+        margin: 10px auto;
+      }
+
+      .profile-links a {
+        display: block;
+        margin: 8px 0;
       }
     }
   </style>
@@ -198,147 +184,65 @@
 
 <body>
 
-  <header id="home">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="cv.html">CV</a>
+    <a href="ongoing-projects.html">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="co-curricular.html">Activities</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header>
     <div class="hero">
       <h1>Um-E-Roman Fayyaz</h1>
-      <p class="subtitle">Researcher | PhD in Corporate Governance and Sustainability | Research Writer</p>
-      <p>
-        Corporate Governance · Board Diversity · ESG Disclosure · Innovation · Entrepreneurship
+
+      <p class="subtitle">
+        Researcher | PhD in Corporate Governance and Sustainability | Research Writer
       </p>
 
-      <div class="links">
-        <a href="#about">About Me</a>
-        <a href="#work">My Work</a>
-        <a href="#publications">Publications</a>
-        <a href="#links">Profiles</a>
-        <a href="#contact">Contact</a>
+      <p class="intro">
+        I am an academic specializing in corporate governance, board diversity,
+        ESG disclosure, innovation, entrepreneurship, and the role of leadership
+        composition in firm performance and sustainability practices.
+      </p>
+
+      <div class="button-row">
+        <a href="about.html">About Me</a>
+        <a href="cv.html">View CV</a>
+        <a href="publications.html">Publications</a>
+        <a href="ongoing-projects.html">Ongoing Projects</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#work">Work</a>
-    <a href="#publications">Publications</a>
-    <a href="#links">Links</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-
+  <section>
+    <h2>Research Focus</h2>
     <p>
-      I am an academic specializing in corporate governance, board diversity,
-      ESG Environmental, Social and Governance disclosure, and the governance
-      of innovation and entrepreneurship. My work examines how leadership
-      composition and diversity, including gender diversity and female
-      participation, shape firm performance, sustainability practices, and
-      entrepreneurial outcomes across established firms and innovative start-ups.
-    </p>
-
-    <p>
-      I hold a Ph.D. in Accounting, Management and Business Economics
-      EQF Level 8 from Università degli Studi “G. d’Annunzio” Chieti-Pescara,
-      Italy, and have pursued visiting research periods at the University of
-      Murcia, Spain, and PMAS Arid Agriculture University, Pakistan.
-    </p>
-
-    <p>
-      My post-PhD academic career spans two research positions: a Post-Doctoral
-      Research Fellowship at Università degli Studi “G. d’Annunzio”
-      Chieti-Pescara, and a Research Fellowship at the Department of Management,
-      Alma Mater Studiorum Università di Bologna, where I worked on an EU
-      NextGenerationEU/PNRR-funded project examining board composition,
-      governance structures, and the role of female founders and directors in
-      Italian innovative start-ups.
-    </p>
-
-    <p>
-      I have also served as a Teaching Tutor in Applied Business Strategy at the
-      University of Bologna and as a Teaching Assistant at Università degli Studi
-      “G. d’Annunzio” Chieti-Pescara.
+      My research focuses on corporate governance, board diversity, ESG disclosure,
+      innovation, entrepreneurship, female leadership, and the governance structures
+      that influence firm performance and sustainability-oriented decision-making.
     </p>
   </section>
 
-  <section id="work">
-    <h2>My Work</h2>
-
-    <div class="item">
-      <h3>Corporate Governance and Board Diversity</h3>
-      <p>
-        My research explores how board structure, leadership composition,
-        female participation, and governance mechanisms influence organizational
-        outcomes, firm performance, and strategic decision-making.
-      </p>
-    </div>
-
-    <div class="item">
-      <h3>ESG Disclosure and Sustainability</h3>
-      <p>
-        I study ESG disclosure, sustainability practices, and the relationship
-        between governance quality and responsible corporate behavior.
-      </p>
-    </div>
-
-    <div class="item">
-      <h3>Innovation and Entrepreneurship</h3>
-      <p>
-        My work also examines innovative start-ups, female founders, directors,
-        and the governance structures that support entrepreneurship and
-        sustainable growth.
-      </p>
-    </div>
-  </section>
-
-  <section id="publications">
-    <h2>Publications</h2>
-
-    <div class="item">
-      <h3>Publication Title 1</h3>
-      <p>
-        Add your publication title, co-authors, journal or conference name, and year here.
-      </p>
-    </div>
-
-    <div class="item">
-      <h3>Publication Title 2</h3>
-      <p>
-        Add another publication here. You can also add links to DOI, Google Scholar,
-        or journal pages.
-      </p>
-    </div>
-  </section>
-
-  <section id="links">
+  <section>
     <h2>Profile Links</h2>
 
     <p>
       You can find more about my academic and professional work through the links below.
     </p>
 
-    <div class="links">
+    <div class="profile-links">
       <a href="https://github.com/umeromanfayyaz" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/um-e-roman-fayyaz-689b25216/" target="_blank">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=wzS_gxQAAAAJ&hl=en" target="_blank">Google Scholar</a>
       <a href="https://www.researchgate.net/profile/Um-E-Roman-Fayyaz?ev=hdr_xprf" target="_blank">ResearchGate</a>
       <a href="https://orcid.org/0000-0002-0025-4954" target="_blank">ORCID</a>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-
-    <div class="contact-box">
-      <div class="contact-card">
-        <strong>Email</strong>
-        <p>umeeroman.fayyaz@unibo.it</p>
-      </div>
-
-      <div class="contact-card">
-        <strong>Location</strong>
-        <p>Bologna, Italy</p>
-      </div>
     </div>
   </section>
 
