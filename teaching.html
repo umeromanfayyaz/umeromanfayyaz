@@ -286,6 +286,32 @@ body.light-mode .profile-photo {
   <footer>
     <p>© 2026 Um-E-Roman Fayyaz. All rights reserved.</p>
   </footer>
+<button class="theme-toggle" onclick="toggleTheme()">Light Mode</button>
 
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("light-mode");
+
+    const button = document.querySelector(".theme-toggle");
+
+    if (document.body.classList.contains("light-mode")) {
+      button.textContent = "Dark Mode";
+      localStorage.setItem("theme", "light");
+    } else {
+      button.textContent = "Light Mode";
+      localStorage.setItem("theme", "dark");
+    }
+  }
+
+  window.onload = function () {
+    const savedTheme = localStorage.getItem("theme");
+    const button = document.querySelector(".theme-toggle");
+
+    if (savedTheme === "light") {
+      document.body.classList.add("light-mode");
+      button.textContent = "Dark Mode";
+    }
+  };
+</script>
 </body>
 </html>
