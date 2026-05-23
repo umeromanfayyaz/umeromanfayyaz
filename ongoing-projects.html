@@ -21,7 +21,84 @@
       padding: 16px;
       text-align: center;
     }
+body.light-mode {
+  background: #f5f5f5;
+  color: #111827;
+}
 
+body.light-mode nav {
+  background: #ffffff;
+  border-bottom: 1px solid #d1d5db;
+}
+
+body.light-mode nav a {
+  color: #111827;
+}
+
+body.light-mode nav a:hover {
+  color: #2563eb;
+}
+
+body.light-mode header {
+  background:
+    radial-gradient(circle at top, rgba(37, 99, 235, 0.12), transparent 35%),
+    linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+}
+
+body.light-mode section {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3 {
+  color: #111827;
+}
+
+body.light-mode p,
+body.light-mode li {
+  color: #374151;
+}
+
+body.light-mode footer {
+  border-top: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.theme-toggle {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2000;
+  padding: 10px 16px;
+  background: #111827;
+  color: #ffffff;
+  border: 1px solid #374151;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+body.light-mode .theme-toggle {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #9ca3af;
+}
+
+.profile-photo {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #2563eb;
+  margin-bottom: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+body.light-mode .profile-photo {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+}
     nav a {
       color: #f5f5f5;
       margin: 0 10px;
